@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Login Page</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(224, 223, 223);
+        }
+
+        .container{
+            padding:10px;
+            margin: 130px auto;
+            max-width: 400px;
+            border-radius: 10px;
+            background-color: white;
+
+        }
+
+        img {
+            width: 90px;
+            margin: 20px 150px auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+
+        input[type="button"] {
+            background-color: rgba(0, 56, 209, 0.89);
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        input[type="button"]:hover {
+            background-color: rgba(0, 56, 209, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://imgs.search.brave.com/jBtGy0ol3la5hA7Kp0TqwNocImeUZHd72O2H2wWn7V0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi83LzdlL0dt/YWlsX2ljb25fJTI4/MjAyMCUyOS5zdmcv/MjIwcHgtR21haWxf/aWNvbl8lMjgyMDIw/JTI5LnN2Zy5wbmc" alt="gmail logo">
+        <h2>Login</h2>
+        <p>Use your Google Account</p>
+        <form action="post">
+            <input type="text" name="email" id="email" placeholder="Email or phone">
+            <a href="#forgotEmail">Forgot email?</a>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <a href="#forgotPassword">Forgot password?</a>
+            <a href="#createacc">Create account</a>
+            <input type="button" type="submit" value="sign in">    
+        </form>
+    </div>
+</body>
+</html>
